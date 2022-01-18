@@ -1,0 +1,130 @@
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-image {
+  width: 66%;
+}
+
+.arg-prog {
+  width: 20%;
+  height: 100%;
+}
+
+#sideNav {
+  background-color: #a9eaf0 !important;
+  margin-bottom: 0px;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.btn {
+  background-color: #46a9af;
+  border-color: #46a9af;
+}
+
+.mat-card {
+  border-radius: 32px;
+  margin: 10px 10 px;
+  padding: 20px;
+  border-color: turquoise;
+}
+.mat-card div {
+  margin: 10px 10px;
+}
+
+#header {
+  margin: 50px;
+  margin-top: 10px;
+  border-color: none;
+  padding-bottom: 0px;
+}
+
+.responsive-banner {
+  margin-top: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+}
+
+img.redimension {
+  clip-path: inset(0px 0px 120px 0px);
+  margin-top: -100px;
+  position: relative;
+}
+
+#profile_image {
+  display: flex;
+  clip-path: circle(40%);
+  width: 17%;
+  height: 17%;
+  margin-top: -25%;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .nav-image {
+    width: 33%;
+    padding: 0;
+  }
+
+  .arg-prog {
+    width: 80%;
+  }
+
+  img.redimension {
+    clip-path: inset(50px 0px 50px 0px);
+  }
+}
