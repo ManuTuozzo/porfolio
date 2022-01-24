@@ -42,9 +42,11 @@
 }
 
 .nav-image {
-  width: 66%;
+  width: 50%;
 }
+/*Clase del div del logo de AP*/
 
+/*Clase de img del logo de AP*/
 .arg-prog {
   width: 20%;
   height: 100%;
@@ -91,28 +93,102 @@
 }
 
 .responsive-banner {
-  margin-top: 50px;
+  margin: -1px -15px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 0px;
+  overflow: hidden;
+  height: 18vw;
+  z-index: -1;
 }
 
 img.redimension {
-  clip-path: inset(0px 0px 120px 0px);
-  margin-top: -100px;
   position: relative;
+  top: -14vw;
+  width: 100%;
 }
 
 #profile_image {
-  display: flex;
-  clip-path: circle(40%);
-  width: 17%;
-  height: 17%;
-  margin-top: -25%;
-  margin-left: 5%;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  border: solid 3px white;
+  margin-top: -8.6vw;
+  margin-left: 2vw;
   z-index: 1;
 }
+
+.fotodeperfil {
+  position: relative;
+  top: -3vw;
+  left: -2vw;
+  width: 19vw;
+  height: auto;
+}
+
+h1 {
+  font-size: calc(1.725rem + 3.7vw);
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+}
+
+a {
+  color: #47bcc7;
+  text-decoration: underline;
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: #47bcc7 !important;
+}
+
+.subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: calc(1rem + 0.7vw);
+}
+
+section.resume-section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: -2rem;
+  padding-bottom: 5rem;
+}
+
+/* #myName {
+  display: flex;
+  justify-content: center;
+  margin: -12vw -2vw 6vw 0;
+ } */
 
 @media (max-width: 768px) {
   .nav-image {
@@ -123,8 +199,20 @@ img.redimension {
   .arg-prog {
     width: 80%;
   }
+}
 
-  img.redimension {
-    clip-path: inset(50px 0px 50px 0px);
-  }
+hr:not([size]) {
+  height: 3px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+hr {
+  margin: 1rem 0;
+  color: #a9eaf0;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.5;
 }
