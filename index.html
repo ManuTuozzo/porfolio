@@ -71,7 +71,7 @@
       <button type="button" class="btn btn-primary">Log In</button>
     </nav>
     <div class="container-fluid">
-      <header>
+    <header>
         <div class="card responsive-banner">
           <img
             class="redimension"
@@ -87,8 +87,8 @@
             class="fotodeperfil"
           />
         </div>
-       <!-- <div id="myName"><h1>Manuela María Tuozzo</h1></div> -->
       </header>
+      <!-- Sobre mí -->
       <section class="resume-section" id="about">
         <div class="resume-section-content">
             <h1 class="mb-0">
@@ -99,14 +99,25 @@
                 Pilar, Bs. As. - Argentina
                 <a href="mailto:manuelatuozzo@gmail.com">manuelatuozzo@gmail.com</a>
             </div>
-            <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for
-                high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to
-                further the overall value proposition.</p>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-delete" style="float: right;">
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-edit" style="float: right;">
+              <i class="far fa-edit"></i>
+            </button>   
+            <p class="lead mb-5">Full Stack Developer Jr.</p>
         </div>
         <hr class="m-0">
     </section>
+    <!-- Experiencia -->
       <section class="resume-section" id="experience">
         <div class="resume-section-content">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-delete" style="float: right;">
+            <i class="far fa-trash-alt"></i>
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-edit" style="float: right;">
+            <i class="far fa-edit"></i>
+          </button>
             <h2 class="mb-5">Experiencia</h2>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
@@ -152,9 +163,148 @@
                 <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
             </div>
         </div>
+        <hr class="m-0">
     </section>
-    <hr class="m-0">
+    
+    <!-- Educación-->
+    <section class="resume-section" id="education">
+      <div class="resume-section-content">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-delete" style="float: right;">
+          <i class="far fa-trash-alt"></i>
+        </button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-edit" style="float: right;">
+          <i class="far fa-edit"></i>
+        </button>
+          <h2 class="mb-5">Educacion</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="flex-grow-1">
+                  <h3 class="mb-0">Universidad Nacional de la Matanza</h3>
+                  <div class="subheading mb-3">Ingeniera en Sistemas</div>
 
+              </div>
+              <div class="flex-shrink-0"><span class="text-primary">Abril 1993 - Febrero 2000</span></div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+              <div class="flex-grow-1">
+                  <h3 class="mb-0">Universidad Nacional de la Matanza</h3>
+                  <div class="subheading mb-3">Ingenieria Electronica</div>
+
+              </div>
+              <div class="flex-shrink-0"><span class="text-primary">Abril 1993 - SIN FINALIZAR</span></div>
+          </div>
+      </div>
+    <hr class="m-0" />
+  </section>
+
+  <!-- Habilidades-->
+  <section class="resume-section" id="skills">
+    <div class="resume-section-content">
+      <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-delete" style="float: right;">
+        <i class="far fa-trash-alt"></i>
+      </button>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-edit" style="float: right;">
+        <i class="far fa-edit"></i>
+      </button>
+        <h2 class="mb-5">Habilidades</h2>
+        <div class="subheading mb-3">Lenguajes de Programacion y Herramientas</div>
+        <ul class="list-inline dev-icons">
+            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+            <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+            <li class="list-inline-item"><i class="fab fa-react"></i></li>
+            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+            <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+            <li class="list-inline-item"><i class="fab fa-less"></i></li>
+            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+            <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
+            <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
+            <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+        </ul>
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Mobile-First, Responsive Design
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Cross Browser Testing & Debugging
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Cross Functional Teams
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Agile Development & Scrum
+            </li>
+        </ul>
+    </div>
+  <hr class="m-0" />
+</section>
+
+        <!-- Proyectos-->
+    <section class="resume-section" id="education">
+      <div class="resume-section-content">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-delete" style="float: right;">
+          <i class="far fa-trash-alt"></i>
+        </button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-edit" style="float: right;">
+          <i class="far fa-edit"></i>
+        </button>
+          <h2 class="mb-5">Proyectos</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="flex-grow-1">
+                  <h3 class="mb-0">Universidad Nacional de la Matanza</h3>
+                  <div class="subheading mb-3">Ingeniera en Sistemas</div>
+
+              </div>
+              <div class="flex-shrink-0"><span class="text-primary">Abril 1993 - Febrero 2000</span></div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+              <div class="flex-grow-1">
+                  <h3 class="mb-0">Universidad Nacional de la Matanza</h3>
+                  <div class="subheading mb-3">Ingenieria Electronica</div>
+
+              </div>
+              <div class="flex-shrink-0"><span class="text-primary">Abril 1993 - SIN FINALIZAR</span></div>
+          </div>
+      </div>
+  </section>
+
+   <!-- Login Form -->
+   <div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card shadow">
+                <div class="card-title text-center border-bottom">
+                    <h2 class="p-3">Acceso</h2>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-4">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="usuario" />
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" />
+                        </div>
+                        <div class="mb-4">
+                            <input type="checkbox" class="form-check-input" id="remember" />
+                            <label for="remember" class="form-label">Recuérdame</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn text-light main-bg"
+                                onclick="fnValidar()">ENTRAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
       <!--
       <div id="about_me">

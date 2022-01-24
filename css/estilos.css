@@ -71,8 +71,13 @@
 }
 
 .btn {
-  background-color: #46a9af;
+  background-color: transparent;
   border-color: #46a9af;
+  color: #208b9e;
+}
+
+.btn-edit {
+  margin-right: 1vw;
 }
 
 .mat-card {
@@ -133,6 +138,11 @@ h1 {
 }
 
 h2 {
+  font-size: calc(1.325rem + 2.9vw);
+}
+
+h3,
+.h3 {
   font-size: calc(1.325rem + 0.9vw);
 }
 
@@ -156,6 +166,7 @@ h1,
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
+  text-transform: uppercase;
 }
 
 a {
@@ -178,10 +189,8 @@ a {
 }
 
 section.resume-section {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: -2rem;
-  padding-bottom: 5rem;
+  padding: 1vw;
+  margin-bottom: 1vw;
 }
 
 /* #myName {
