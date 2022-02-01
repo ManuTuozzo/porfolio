@@ -169,6 +169,10 @@ h1,
   text-transform: uppercase;
 }
 
+p {
+  font-size: calc(1.1rem + 0.3vw) !important;
+}
+
 a {
   color: #47bcc7;
   text-decoration: underline;
@@ -192,12 +196,6 @@ section.resume-section {
   padding: 1vw;
   margin-bottom: 1vw;
 }
-
-/* #myName {
-  display: flex;
-  justify-content: center;
-  margin: -12vw -2vw 6vw 0;
- } */
 
 @media (max-width: 768px) {
   .nav-image {
